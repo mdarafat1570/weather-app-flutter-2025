@@ -9,8 +9,8 @@ class DayUpdateRow extends StatelessWidget {
     required this.iconPath,
     required this.label,
     required this.value,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -73,7 +73,7 @@ class DayUpdateRow extends StatelessWidget {
                         ),
                       ],
                     ),
-                    Spacer(),
+                    const Spacer(),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
